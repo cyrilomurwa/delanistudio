@@ -1,12 +1,25 @@
 body {
-    background-color: white;
+    overflow-x: hidden;
 }
-h1{
-    font-family: 'Merriweather', serif;
-}
-.body-header{
-    background-image: url(../images/h_img.jpg);
+.bodyheader{
+    background-image: url(../images/backgrounds/h_img.jpg);
+    background-position: center;
     background-size: cover;
     text-align:center;
     color:white;
 }
+.bodytop {
+    padding-top: 20%;
+}
+.hlogo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+#mouseclick{
+    padding-top: 17%;
+    padding-bottom:1%
+  }
+  .p1{
+      font-size: 10px;
+  }
