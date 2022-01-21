@@ -82,7 +82,7 @@ $(document).ready(function() {
            $("input:checkbox[name='music']:checked").each(function(){    
                cricketer.push($(this).val());    		
            });
-           alert("The selected chocolate are: " + cricketer.join(", "));
+         //  alert("The selected chocolate are: " + cricketer.join(", "));
       
       $(".pname").text(pnameInput);
       $(".email").text(emailInput);
@@ -90,8 +90,6 @@ $(document).ready(function() {
       $(".country").text(country);
       $(".colour").text(colour);
       $(".dob").text(dob);
-  
-  
   
       alert("Thank you for your Message. We have received your information as below"+"\\n"+"Your Name "+pnameInput+" Gender "+gender+" Date of Birth "+dob+" Email "+emailInput+" "+"\\n"+"Country "+country+" Favourite Color "+colour+" Music Genre "+ cricketer.join(", ")+"");
 
