@@ -69,7 +69,7 @@ $(document).ready(function(){
 
 //retrieve form details
 $(document).ready(function() {
-  $("#blanks form").submit(function(event) {
+  $("form#contact-form").submit(function(event) {
 
       var pnameInput = $("input#pname").val();
       var emailInput = $("input#email").val();
