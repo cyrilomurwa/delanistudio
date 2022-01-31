@@ -88,4 +88,6 @@ body {
 #form{
     background-image: url("../images/backgrounds/c_image.jpg");
   }
-
+#story {
+    display: none;
+}
