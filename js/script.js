@@ -65,34 +65,46 @@ $(document).ready(function(){
     }).mouseleave(function () {
       $('#work8-popup').hide("slow");
     });
-});
+
 
 //retrieve form details
-$(document).ready(function() {
-  $("form#contact-form").submit(function(event) {
 
-      var pnameInput = $("input#pname").val();
+  $("form#form1").submit(function(event) {
+   
+      event.preventDefault();
+
+   
+     // alert("The selected chocolate are: " + cricketer.join(", "));
+
+      var pname = $("input#pname").val();
       var emailInput = $("input#email").val();
       var country = $("#country").val();
-      var colour = $("input#colour").val();
+      var color1 = $("input#color1").val();
       var dob = $("input#dob").val();
       var gender = $("input:radio[name=gender]:checked").val();
 
-       var music = [];
+      alert("Thank you for your Message. We have received your information as below " + "\n" + "Your Name :" + pname + " " + "\n" + " Gender :" + gender + "" + "\n" + " Date of Birth :" + dob + "" + "\n" + " Email :" + emailInput + " " + " \n " + " Country " + country + "" + "\n" + " Favourite Color " + color1 + "");
+      var music = [];
            $("input:checkbox[name='music']:checked").each(function(){    
                cricketer.push($(this).val());    		
            });
+      //alert("test" + pname + "test");
+
+           // "+"\\n"+"Country "+country+" Favourite Color "+colour+" Music Genre "+ cricketer.join(", ")+"");
          //  alert("The selected chocolate are: " + cricketer.join(", "));
       
-      $(".pname").text(pnameInput);
-      $(".email").text(emailInput);
-      $(".gender").text(gender);
-      $(".country").text(country);
-      $(".colour").text(colour);
-      $(".dob").text(dob);
-  
-      alert("Thank you for your Message. We have received your information as below"+"\\n"+"Your Name "+pnameInput+" Gender "+gender+" Date of Birth "+dob+" Email "+emailInput+" "+"\\n"+"Country "+country+" Favourite Color "+colour+" Music Genre "+ cricketer.join(", ")+"");
+    //  $(".pname").text(pnameInput);
+     // $(".email").text(emailInput);
+    //  $(".gender").text(gender);
+    //  $(".country").text(country);
+    //  $(".colour").text(colour);
+    //  $(".dob").text(dob);
 
-      event.preventDefault();
+      alert("Thank you for your Message. We have received your information as below " + pnameInput + "");
+  
+     // alert("Thank you for your Message. We have received your information as below"+"\\n"+"Your Name "+pnameInput+" Gender "+gender+" Date of Birth "+dob+" Email "+emailInput+" "+"\\n"+"Country "+country+" Favourite Color "+colour+" Music Genre "+ cricketer.join(", ")+"");
+
+       //$("#story").show()
+      
   });
 });
